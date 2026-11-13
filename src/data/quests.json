@@ -1,0 +1,165 @@
+[
+  {
+    "id": "quest_main_1",
+    "title": "Sơ Xuất Giang Hồ: Tương Dương Cố Sự",
+    "chapter": "Hồi 1 - Lạc Bước Tương Dương",
+    "type": "main",
+    "description": "Ngươi thân là đệ tử Võ Đang lần đầu hạ sơn hành tẩu giang hồ, hãy tìm hiểu phong thổ thành Tương Dương, thu thập tin tức và chuẩn bị hành trang trước khi dấn thân vào cõi hiểm nguy.",
+    "giverNpc": "Triệu Thống Lĩnh",
+    "location": "Thành Tương Dương",
+    "status": "in_progress",
+    "requiredLevel": 1,
+    "icon": "📜",
+    "objectives": [
+      {
+        "id": "obj_tavern_rumors",
+        "description": "Đến Túy Tiên Lâu nghe ngóng 2 tin đồn giang hồ từ Tiểu Nhị",
+        "current": 0,
+        "target": 2,
+        "isCompleted": false,
+        "relatedFlag": "heardRumorCount"
+      },
+      {
+        "id": "obj_apothecary",
+        "description": "Bái phỏng Tôn Dược Sư tại Y Quán Bách Thảo Đường xin dược liệu",
+        "current": 0,
+        "target": 1,
+        "isCompleted": false,
+        "relatedFlag": "hasVisitedApothecary"
+      },
+      {
+        "id": "obj_city_gate",
+        "description": "Đến Đông Môn thám thính tình hình phòng thủ thành trì",
+        "current": 0,
+        "target": 1,
+        "isCompleted": false,
+        "relatedFlag": "hasSpokenToCoachman"
+      }
+    ],
+    "reward": {
+      "exp": 600,
+      "silver": 50,
+      "title": "Sơ Xuất Giang Hồ",
+      "itemName": "Đại Hoàn Đan (x5)",
+      "itemIcon": "💊"
+    }
+  },
+  {
+    "id": "quest_beggar",
+    "title": "Hào Kiệt Thiện Tâm: Hồng Lão Khất",
+    "chapter": "Kỳ Ngộ - Cái Bang Bí Sự",
+    "type": "side",
+    "description": "Một lão ăn mày rách rưới ngồi bên vệ đường cổng thành Tương Dương, khí sắc bất phàm. Hành hiệp trượng nghĩa bắt đầu từ lòng trắc ẩn cứu tế dân nghèo.",
+    "giverNpc": "Hồng Lão Khất",
+    "location": "Cổng Thành Tương Dương",
+    "status": "in_progress",
+    "requiredLevel": 1,
+    "icon": "🥢",
+    "objectives": [
+      {
+        "id": "obj_meet_beggar",
+        "description": "Tìm gặp và trò chuyện với Hồng Lão Khất vào ban ngày",
+        "current": 0,
+        "target": 1,
+        "isCompleted": false,
+        "relatedFlag": "spokeWithBeggar"
+      },
+      {
+        "id": "obj_give_silver",
+        "description": "Bố thí 10 lượng bạc giúp lão ăn mày ấm bụng",
+        "current": 0,
+        "target": 1,
+        "isCompleted": false,
+        "relatedFlag": "gaveBeggarSilver"
+      }
+    ],
+    "reward": {
+      "exp": 450,
+      "silver": 30,
+      "title": "Nghĩa Khí Đảm Đương",
+      "itemName": "Bí Kíp: Tiêu Dao Bộ Pháp",
+      "itemIcon": "📖"
+    }
+  },
+  {
+    "id": "quest_bandit",
+    "title": "Dạ Hành Thích Khách: Cấm Địa Rừng Trúc",
+    "chapter": "Truy Nã - Hắc Phong Sào Huyệt",
+    "type": "bounty",
+    "description": "Gần đây ngoài Rừng Trúc Hoang Dã đêm hôm thường có đạo tặc Hắc Phong trại rình rập hại người. Quan phủ Tương Dương treo thưởng cho hiệp khách nào dám dấn thân thanh trừ tà ác.",
+    "giverNpc": "Bia Cấm Địa / Triệu Thống Lĩnh",
+    "location": "Rừng Trúc Hoang Dã",
+    "status": "in_progress",
+    "requiredLevel": 5,
+    "icon": "🗡️",
+    "objectives": [
+      {
+        "id": "obj_enter_forest",
+        "description": "Vượt qua Đông Môn tiến vào Rừng Trúc Hoang Dã",
+        "current": 0,
+        "target": 1,
+        "isCompleted": false,
+        "relatedFlag": "hasEnteredBambooForest"
+      },
+      {
+        "id": "obj_confront_thief",
+        "description": "Đợi đến Ban Đêm tìm và chạm trán Hắc Y Thích Khách",
+        "current": 0,
+        "target": 1,
+        "isCompleted": false,
+        "relatedFlag": "confrontedBandit"
+      },
+      {
+        "id": "obj_visit_pavilion",
+        "description": "Khám phá Trúc Lâm Vọng Nguyệt Đình ở sâu trong rừng",
+        "current": 0,
+        "target": 1,
+        "isCompleted": false,
+        "relatedFlag": "visitedPavilion"
+      }
+    ],
+    "reward": {
+      "exp": 1000,
+      "silver": 120,
+      "title": "Trảm Gian Trừ Ác",
+      "itemName": "Hắc Thiết Dạ Hành Bào",
+      "itemIcon": "🥋"
+    }
+  },
+  {
+    "id": "quest_dojo",
+    "title": "Thiết Quyền Bàn Thạch: Rèn Luyện Võ Đạo",
+    "chapter": "Rèn Luyện - Uy Viễn Tiêu Cục",
+    "type": "side",
+    "description": "Võ học vô biên, lấy căn cơ vững vàng làm trọng. Hãy đến võ đường tập luyện mã bộ và thử đòn quyền cước trên cọc mộc nhân.",
+    "giverNpc": "Nhạc Võ Sư",
+    "location": "Võ Đường Tương Dương",
+    "status": "in_progress",
+    "requiredLevel": 1,
+    "icon": "🥋",
+    "objectives": [
+      {
+        "id": "obj_train_dojo",
+        "description": "Đến Võ Đường thỉnh giáo Nhạc Võ Sư",
+        "current": 0,
+        "target": 1,
+        "isCompleted": false,
+        "relatedFlag": "hasTrainedAtDojo"
+      },
+      {
+        "id": "obj_hit_dummy",
+        "description": "Tiến lại cọc gỗ Mộc Nhân thử thách công lực",
+        "current": 0,
+        "target": 1,
+        "isCompleted": false,
+        "relatedFlag": "trainedOnDummy"
+      }
+    ],
+    "reward": {
+      "exp": 350,
+      "silver": 25,
+      "itemName": "Kim Cương Hộ Thể Đan",
+      "itemIcon": "✨"
+    }
+  }
+]

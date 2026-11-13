@@ -1,0 +1,221 @@
+[
+  {
+    "id": "enemy_bamboo_bandit",
+    "name": "Hắc Phong Sơn Tặc",
+    "title": "Lâu La Rừng Trúc",
+    "level": 8,
+    "element": "Hỏa",
+    "hp": 420,
+    "maxHp": 420,
+    "mp": 120,
+    "maxMp": 120,
+    "attackMin": 45,
+    "attackMax": 62,
+    "defense": 18,
+    "agility": 22,
+    "evasion": 8,
+    "critRate": 10,
+    "expReward": 180,
+    "silverReward": 18,
+    "avatarIcon": "🏴‍☠️",
+    "description": "Tên sơn tặc hung hãn ẩn náu sau các rặng trúc rậm rạp, tay lăm lăm đại đao chờ cướp bóc khách bộ hành.",
+    "zoneId": "rung_truc",
+    "isHumanNPC": false,
+    "isoX": 25,
+    "isoY": 13,
+    "skills": [
+      {
+        "name": "Cuồng Phong Trảm",
+        "damageMultiplier": 1.35,
+        "mpCost": 30,
+        "description": "Vung đại đao chém xuống tựa cuồng phong nổi dậy"
+      },
+      {
+        "name": "Hắc Sa Ám Tiễn",
+        "damageMultiplier": 1.25,
+        "mpCost": 25,
+        "description": "Bốc nắm cát độc vung thẳng vào mặt đối thủ"
+      }
+    ]
+  },
+  {
+    "id": "enemy_venom_viper",
+    "name": "Lục Trúc Thanh Xà",
+    "title": "Dị Thú Độc Lân",
+    "level": 9,
+    "element": "Mộc",
+    "hp": 360,
+    "maxHp": 360,
+    "mp": 140,
+    "maxMp": 140,
+    "attackMin": 52,
+    "attackMax": 70,
+    "defense": 14,
+    "agility": 34,
+    "evasion": 16,
+    "critRate": 15,
+    "expReward": 210,
+    "silverReward": 15,
+    "avatarIcon": "🐍",
+    "description": "Loài rắn lục ẩn mình hòa lẫn vào màu lá trúc xanh thẫm, thân pháp cực nhanh và nọc độc khôn lường.",
+    "zoneId": "rung_truc",
+    "isHumanNPC": false,
+    "isoX": 29,
+    "isoY": 21,
+    "skills": [
+      {
+        "name": "Độc Nha Phệ Tâm",
+        "damageMultiplier": 1.45,
+        "mpCost": 35,
+        "description": "Phóng thân như tia chớp đớp thẳng vào yếu huyệt"
+      }
+    ]
+  },
+  {
+    "id": "enemy_white_tiger",
+    "name": "Bạch Ngạch Mãnh Hổ",
+    "title": "Chúa Tể Trúc Lâm",
+    "level": 12,
+    "element": "Kim",
+    "hp": 620,
+    "maxHp": 620,
+    "mp": 160,
+    "maxMp": 160,
+    "attackMin": 68,
+    "attackMax": 92,
+    "defense": 26,
+    "agility": 28,
+    "evasion": 12,
+    "critRate": 18,
+    "expReward": 360,
+    "silverReward": 40,
+    "avatarIcon": "🐯",
+    "description": "Mãnh hổ trán trắng gầm vang rung chuyển cả rừng trúc, mỗi cú vồ mang theo kình lực ngàn cân.",
+    "zoneId": "rung_truc",
+    "isHumanNPC": false,
+    "isoX": 32,
+    "isoY": 11,
+    "skills": [
+      {
+        "name": "Hổ Khiếu Sơn Lâm",
+        "damageMultiplier": 1.5,
+        "mpCost": 45,
+        "description": "Gầm thét chấn động tâm thần rồi vồ xé đối thủ"
+      }
+    ]
+  },
+  {
+    "id": "npc_dao_tac",
+    "name": "Hắc Y Thích Khách",
+    "title": "Hắc Phong Sào Huyệt Đạo Tặc",
+    "level": 11,
+    "element": "Thủy",
+    "hp": 580,
+    "maxHp": 580,
+    "mp": 220,
+    "maxMp": 220,
+    "attackMin": 62,
+    "attackMax": 84,
+    "defense": 22,
+    "agility": 35,
+    "evasion": 18,
+    "critRate": 20,
+    "expReward": 450,
+    "silverReward": 65,
+    "avatarIcon": "🗡️",
+    "description": "Sát thủ áo đen chỉ xuất hiện dưới màn đêm Rừng Trúc, thân thủ quỷ mị với song đoản đao tẩm độc.",
+    "zoneId": "rung_truc",
+    "isNightOnly": true,
+    "isNpcChallenge": true,
+    "isHumanNPC": true,
+    "npcId": "npc_dao_tac",
+    "relatedFlag": "confrontedBandit",
+    "skills": [
+      {
+        "name": "U Minh Đoản Đao",
+        "damageMultiplier": 1.5,
+        "mpCost": 40,
+        "description": "Hai luồng đao quang đen kịt chém chéo như bóng ma"
+      },
+      {
+        "name": "Độc Sa Chưởng",
+        "damageMultiplier": 1.4,
+        "mpCost": 35,
+        "description": "Tung chưởng mang theo chướng khí âm hàn"
+      }
+    ]
+  },
+  {
+    "id": "npc_vosu",
+    "name": "Nhạc Võ Sư",
+    "title": "Uy Viễn Tiêu Cục Tổng Tiêu Đầu",
+    "level": 12,
+    "element": "Thổ",
+    "hp": 650,
+    "maxHp": 650,
+    "mp": 200,
+    "maxMp": 200,
+    "attackMin": 55,
+    "attackMax": 74,
+    "defense": 30,
+    "agility": 26,
+    "evasion": 10,
+    "critRate": 14,
+    "expReward": 280,
+    "silverReward": 25,
+    "avatarIcon": "🥋",
+    "description": "Tổng tiêu đầu Uy Viễn Tiêu Cục, võ công cương mãnh trầm ổn, sẵn sàng chỉ điểm tỉ thí cùng hậu bối giang hồ.",
+    "zoneId": "tuong_duong",
+    "isNpcChallenge": true,
+    "isHumanNPC": true,
+    "npcId": "npc_vosu",
+    "relatedFlag": "hasTrainedAtDojo",
+    "skills": [
+      {
+        "name": "Bàn Thạch Quyền",
+        "damageMultiplier": 1.45,
+        "mpCost": 35,
+        "description": "Đấm ra một quyền nặng tựa Thái Sơn áp đỉnh"
+      },
+      {
+        "name": "Liên Hoàn Khai Sơn Cước",
+        "damageMultiplier": 1.35,
+        "mpCost": 30,
+        "description": "Tung liên tiếp ba cước phá tan phòng tuyến"
+      }
+    ]
+  },
+  {
+    "id": "npc_doi_ap_tieu",
+    "name": "Liệt Phong Tiêu Sư",
+    "title": "Uy Viễn Tiêu Cục Áp Tiêu Đội",
+    "level": 10,
+    "element": "Hỏa",
+    "hp": 500,
+    "maxHp": 500,
+    "mp": 180,
+    "maxMp": 180,
+    "attackMin": 50,
+    "attackMax": 68,
+    "defense": 22,
+    "agility": 28,
+    "evasion": 12,
+    "critRate": 14,
+    "expReward": 240,
+    "silverReward": 20,
+    "avatarIcon": "🚩",
+    "description": "Tiêu sư tinh nhuệ hộ tống bảo tiêu đường dài, đao pháp nhanh nhẹn quyết đoán.",
+    "zoneId": "tuong_duong",
+    "isNpcChallenge": true,
+    "isHumanNPC": true,
+    "npcId": "npc_doi_ap_tieu",
+    "skills": [
+      {
+        "name": "Liệt Phong Khoái Đao",
+        "damageMultiplier": 1.4,
+        "mpCost": 30,
+        "description": "Đao thế dồn dập nhanh như gió táp"
+      }
+    ]
+  }
+]

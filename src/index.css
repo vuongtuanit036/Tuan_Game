@@ -1,0 +1,173 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .text-shadow-wuxia {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(217, 119, 6, 0.5);
+  }
+  .border-wuxia-gold {
+    border-image: linear-gradient(to bottom, #d97706, #92400e, #78350f) 1;
+  }
+}
+
+@keyframes combat-shake-light {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  15% { transform: translate3d(-5px, 2px, 0); }
+  30% { transform: translate3d(5px, -2px, 0); }
+  45% { transform: translate3d(-4px, -1px, 0); }
+  60% { transform: translate3d(4px, 2px, 0); }
+  75% { transform: translate3d(-2px, 1px, 0); }
+}
+
+@keyframes combat-shake-heavy {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  12% { transform: translate3d(-9px, 4px, 0); }
+  25% { transform: translate3d(9px, -4px, 0); }
+  37% { transform: translate3d(-8px, -3px, 0); }
+  50% { transform: translate3d(7px, 4px, 0); }
+  62% { transform: translate3d(-5px, 2px, 0); }
+  75% { transform: translate3d(4px, -2px, 0); }
+  87% { transform: translate3d(-2px, 1px, 0); }
+}
+
+@keyframes combat-shake-ultra {
+  0%, 100% { transform: translate3d(0, 0, 0) rotate(0deg); }
+  10% { transform: translate3d(-15px, 7px, 0) rotate(-0.8deg); }
+  22% { transform: translate3d(15px, -6px, 0) rotate(0.8deg); }
+  34% { transform: translate3d(-13px, -5px, 0) rotate(-0.5deg); }
+  46% { transform: translate3d(12px, 6px, 0) rotate(0.5deg); }
+  58% { transform: translate3d(-9px, 3px, 0) rotate(-0.3deg); }
+  72% { transform: translate3d(7px, -3px, 0) rotate(0.2deg); }
+  86% { transform: translate3d(-3px, 2px, 0) rotate(0deg); }
+}
+
+@keyframes combat-float-up {
+  0% { opacity: 0; transform: translate3d(0, 8px, 0) scale(0.85); }
+  20% { opacity: 1; transform: translate3d(0, -6px, 0) scale(1.12); }
+  80% { opacity: 1; transform: translate3d(0, -24px, 0) scale(1); }
+  100% { opacity: 0; transform: translate3d(0, -36px, 0) scale(0.95); }
+}
+
+@keyframes slash-arc-sweep {
+  0% { opacity: 0; transform: scale(0.35) rotate(-25deg); filter: brightness(2); }
+  30% { opacity: 1; transform: scale(1.16) rotate(0deg); filter: brightness(1.65); }
+  70% { opacity: 0.92; transform: scale(1.28) rotate(6deg); filter: brightness(1.15); }
+  100% { opacity: 0; transform: scale(1.42) rotate(12deg); filter: brightness(0.8); }
+}
+
+@keyframes combat-screen-flash {
+  0% { opacity: 0; }
+  18% { opacity: 0.72; }
+  45% { opacity: 0.28; }
+  100% { opacity: 0; }
+}
+
+@keyframes cloak-flutter {
+  0%, 100% { transform: skewX(0deg) rotate(0deg) scaleX(1); }
+  35% { transform: skewX(-3.2deg) rotate(-1.4deg) scaleX(1.03); }
+  70% { transform: skewX(2.4deg) rotate(1deg) scaleX(0.98); }
+}
+
+@keyframes aura-ring-pulse {
+  0%, 100% { opacity: 0.52; transform: scale(0.96) rotate(0deg); }
+  50% { opacity: 0.9; transform: scale(1.06) rotate(180deg); }
+}
+
+@keyframes bamboo-leaf-fall {
+  0% {
+    transform: translate3d(0, -10vh, 0) rotate(0deg);
+    opacity: 0;
+  }
+  12% {
+    opacity: 0.78;
+  }
+  50% {
+    transform: translate3d(-45px, 48vh, 0) rotate(150deg);
+    opacity: 0.72;
+  }
+  88% {
+    opacity: 0.65;
+  }
+  100% {
+    transform: translate3d(-95px, 108vh, 0) rotate(310deg);
+    opacity: 0;
+  }
+}
+
+@keyframes combat-idle-breathe {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  50% { transform: translate3d(0, -5px, 0); }
+}
+
+.animate-combat-shake {
+  animation: combat-shake-light 0.28s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+.animate-combat-shake-heavy {
+  animation: combat-shake-heavy 0.36s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+.animate-combat-shake-ultra {
+  animation: combat-shake-ultra 0.44s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+.animate-combat-flash {
+  animation: combat-screen-flash 0.38s ease-out forwards;
+}
+
+.animate-cloak-flutter {
+  transform-box: fill-box;
+  transform-origin: top center;
+  animation: cloak-flutter 2.8s ease-in-out infinite;
+}
+
+.animate-aura-pulse {
+  animation: aura-ring-pulse 4.8s ease-in-out infinite;
+}
+
+.animate-combat-float {
+  animation: combat-float-up 1.05s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-slash-vfx {
+  animation: slash-arc-sweep 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-bamboo-leaf {
+  animation-name: bamboo-leaf-fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.animate-combat-breathe {
+  animation: combat-idle-breathe 3s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-combat-shake,
+  .animate-combat-shake-heavy,
+  .animate-combat-shake-ultra,
+  .animate-combat-flash,
+  .animate-cloak-flutter,
+  .animate-aura-pulse,
+  .animate-slash-vfx,
+  .animate-bamboo-leaf,
+  .animate-combat-breathe {
+    animation: none;
+  }
+}
+
+/* Custom scrollbars for wuxia parchment */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #1c1917;
+}
+::-webkit-scrollbar-thumb {
+  background: #78350f;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b45309;
+}

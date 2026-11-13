@@ -1,0 +1,6 @@
+{
+  "name": "Võ Lâm Tuyệt Kỹ 2.5D",
+  "description": "Web Game nhập vai kiếm hiệp phong cách Võ Lâm Truyền Kỳ với bản đồ 2.5D Isometric, đồ họa thủy mặc, điều khiển chạm và phím mượt mà 60 FPS.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

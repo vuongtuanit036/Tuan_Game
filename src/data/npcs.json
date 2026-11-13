@@ -1,0 +1,307 @@
+[
+  {
+    "id": "npc_lao_an_may",
+    "name": "Hồng Lão Khất",
+    "title": "Cửu Đại Tiền Bối Cái Bang",
+    "role": "LaoAnMay",
+    "zoneId": "tuong_duong",
+    "isoX": 19,
+    "isoY": 14,
+    "avatarIcon": "🥢",
+    "spawnCondition": {
+      "zones": ["tuong_duong"],
+      "timeOfDay": "day",
+      "weatherAllowed": ["clear", "foggy"]
+    },
+    "dialogue": [
+      "Hề hề... Vị thiếu hiệp này tướng mạo đường hoàng, ắt là bậc long phượng trong cõi võ lâm!",
+      "Lão già này đói lả ba ngày ba đêm rồi, có thể cho lão xin vài đồng bạc uống chén trà nóng chăng?"
+    ],
+    "options": [
+      {
+        "label": "Bố thí 10 lượng bạc [Thiện tâm]",
+        "action": "give_silver",
+        "requiresSilver": 10,
+        "responseLines": [
+          "Đa tạ tiểu hiệp trượng nghĩa! Lão khất cái không nhận không của ai bao giờ.",
+          "Nể tình ngươi tốt bụng, lão mách cho: Đêm xuống trong Rừng Trúc có bọn Đạo Tặc Hắc Y hay rình rập, nhớ cẩn thận hoặc dùng thuật 'Ẩn Nấp' để đi qua!"
+        ],
+        "setFlag": "gaveBeggarSilver"
+      },
+      {
+        "label": "Hỏi về tung tích Cái Bang",
+        "action": "dialogue",
+        "responseLines": [
+          "Cái Bang đệ tử bốn bể là nhà! Khắp thiên hạ ở đâu có gió trăng, ở đó có huynh đệ Cái Bang.",
+          "Thành Tương Dương này tai mắt của bang ta rải khắp nơi, có chuyện gì cứ tìm lão già này."
+        ]
+      },
+      {
+        "label": "Cáo từ tiền bối",
+        "action": "leave"
+      }
+    ]
+  },
+  {
+    "id": "npc_tieunhi",
+    "name": "Tiểu Nhị Ca",
+    "title": "Túy Tiên Lâu Chưởng Quầy",
+    "role": "TuuDiemTieuNhi",
+    "zoneId": "tuong_duong",
+    "isoX": 8,
+    "isoY": 8,
+    "avatarIcon": "🍶",
+    "spawnCondition": {
+      "zones": ["tuong_duong"],
+      "timeOfDay": "all",
+      "weatherAllowed": ["all"]
+    },
+    "dialogue": [
+      "Khách quan mời vào trong! Túy Tiên Lâu chúng tôi hội tụ đủ cao lương mỹ vị, rượu hoa điêu ủ mười năm!",
+      "Khách quan muốn nghe ngóng tin đồn gì chấn động giang hồ gần đây không?"
+    ],
+    "rumors": [
+      "Tin đồn: Chưởng môn Võ Đang vừa bế quan luyện thành Thái Cực Kiếm Pháp tầng 9, kiếm khí tung hoành ba ngàn dặm!",
+      "Tin đồn: Gần đây ngoài Rừng Trúc Hoang Dã đêm hôm khuya khoắt thường có bóng áo đen thoắt ẩn thoắt hiện, nghi là sát thủ Hắc Y Đạo Tặc!",
+      "Tin đồn: Thương đội Tây Vực vừa vận chuyển một lô Huyền Thiết Trọng Kiếm quý giá qua cổng thành Tương Dương.",
+      "Tin đồn: Nga Mi phái sắp cử các vị nữ hiệp xuống núi trừ yêu trảm ma, thanh trừ lũ trộm cướp ngoài rừng trúc.",
+      "Tin đồn: Có người thấy một vị cao nhân nón lá lánh đời ngồi thiền bên Trúc Lâm Vọng Nguyệt Đình lúc hoàng hôn."
+    ],
+    "options": [
+      {
+        "label": "Hỏi thăm tin đồn giang hồ hôm nay",
+        "action": "rumor"
+      },
+      {
+        "label": "Mua một vò Nữ Nhi Hồng (Hồi phục thể lực)",
+        "action": "dialogue",
+        "responseLines": [
+          "Dạ có ngay! Rượu ngon ấm bụng, uống vào khí huyết lưu thông, thân pháp nhẹ tựa cánh én!"
+        ]
+      },
+      {
+        "label": "Cáo từ",
+        "action": "leave"
+      }
+    ]
+  },
+  {
+    "id": "npc_doi_ap_tieu",
+    "name": "Liệt Phong Tiêu Sư",
+    "title": "Uy Viễn Tiêu Cục Áp Tiêu Đội",
+    "role": "TieuSu",
+    "zoneId": "tuong_duong",
+    "isoX": 14,
+    "isoY": 24,
+    "avatarIcon": "🚩",
+    "spawnCondition": {
+      "zones": ["tuong_duong"],
+      "timeOfDay": "all",
+      "weatherAllowed": ["all"]
+    },
+    "patrolSpeed": 65,
+    "patrolRoute": [
+      { "isoX": 14, "isoY": 24, "waitTimeSec": 2 },
+      { "isoX": 11, "isoY": 20, "waitTimeSec": 1 },
+      { "isoX": 10, "isoY": 15, "waitTimeSec": 2 },
+      { "isoX": 18, "isoY": 16, "waitTimeSec": 2 },
+      { "isoX": 10, "isoY": 15, "waitTimeSec": 1 },
+      { "isoX": 11, "isoY": 20, "waitTimeSec": 1 }
+    ],
+    "dialogue": [
+      "Hợp Thương Bình An! Uy Viễn Tiêu Cục áp chuyển bảo tiêu, xin mời chư vị giang hồ nhường đường!",
+      "Lộ trình chuyến này qua Rừng Trúc vô cùng hiểm trở, huynh đệ bọn ta phải canh gác ngày đêm."
+    ],
+    "options": [
+      {
+        "label": "Thỉnh giáo đao pháp cùng Liệt Phong Tiêu Sư",
+        "action": "challenge",
+        "enemyId": "npc_doi_ap_tieu"
+      },
+      {
+        "label": "Hỏi về chuyến tiêu",
+        "action": "dialogue",
+        "responseLines": [
+          "Bọn ta đang vận chuyển kim ngân cùng mật thư của phủ Tướng quân về Biện Kinh.",
+          "Thời buổi loạn lạc, giang hồ hiểm ác, thiếu hiệp hành tẩu ngoài thành cũng nên kết bạn đồng hành!"
+        ]
+      },
+      {
+        "label": "Không làm phiền các vị",
+        "action": "leave"
+      }
+    ]
+  },
+  {
+    "id": "npc_dao_tac",
+    "name": "Hắc Y Thích Khách",
+    "title": "Hắc Phong Sào Huyệt Đạo Tặc",
+    "role": "DaoTac",
+    "zoneId": "rung_truc",
+    "isoX": 27,
+    "isoY": 16,
+    "avatarIcon": "🗡️",
+    "spawnCondition": {
+      "zones": ["rung_truc"],
+      "timeOfDay": "night",
+      "weatherAllowed": ["all"]
+    },
+    "dialogue": [
+      "Khặc khặc! Đêm hôm khuya khoắt một thân một mình mò vào Rừng Trúc, chán sống rồi sao tiểu tử?",
+      "Mau để lại toàn bộ ngân lượng và bí kíp trên người, đại gia ta tha cho một con đường sống!"
+    ],
+    "options": [
+      {
+        "label": "Rút kiếm giao đấu với Hắc Y Thích Khách!",
+        "action": "challenge",
+        "enemyId": "npc_dao_tac"
+      },
+      {
+        "label": "Đấu khẩu thăm dò lai lịch Hắc Phong trại",
+        "action": "dialogue",
+        "responseLines": [
+          "To gan! Dám dò xét Hắc Phong trại ta sao? Muốn toàn mạng thì rút lui ngay!",
+          "Hắc Y Thích Khách vung đoản đao rạch gió ra uy, ánh mắt đầy sát khí!"
+        ],
+        "setFlag": "confrontedBandit"
+      },
+      {
+        "label": "Vận chuyển Khinh công né tránh rút lui",
+        "action": "leave"
+      }
+    ]
+  },
+  {
+    "id": "npc_xaphu",
+    "name": "Lý Xa Phu",
+    "title": "Thần Hành Mã Dịch",
+    "role": "XaPhu",
+    "zoneId": "tuong_duong",
+    "isoX": 17,
+    "isoY": 15,
+    "avatarIcon": "🏇",
+    "spawnCondition": {
+      "zones": ["tuong_duong"],
+      "timeOfDay": "all",
+      "weatherAllowed": ["all"]
+    },
+    "dialogue": [
+      "Vị thiếu hiệp này, muốn đi tới môn phái nào hay thành trì nào? Dịch trạm ta có tuấn mã nghìn dặm!",
+      "Gần đây ngoài Rừng Trúc phía đông xuất hiện sơn tặc và dã thú, thiếu hiệp chớ nên khinh suất!"
+    ],
+    "options": [
+      {
+        "label": "Hỏi thăm đường xá",
+        "action": "dialogue",
+        "responseLines": [
+          "Từ Đông Môn thẳng tiến là Rừng Trúc Hoang Dã. Đi sâu vào trong sẽ thấy Trúc Lâm Vọng Nguyệt Đình."
+        ]
+      },
+      {
+        "label": "Cáo từ",
+        "action": "leave"
+      }
+    ]
+  },
+  {
+    "id": "npc_duocsu",
+    "name": "Tôn Dược Sư",
+    "title": "Bách Thảo Diệu Thủ",
+    "role": "DuocSu",
+    "zoneId": "tuong_duong",
+    "isoX": 15,
+    "isoY": 8,
+    "avatarIcon": "🌿",
+    "spawnCondition": {
+      "zones": ["tuong_duong"],
+      "timeOfDay": "all",
+      "weatherAllowed": ["all"]
+    },
+    "dialogue": [
+      "Hành tẩu giang hồ dao kiếm vô tình, thiếu hiệp đã chuẩn bị đủ Kim Sáng Dược và Ngũ Hoa Ngọc Lộ Hoàn chưa?",
+      "Rừng Trúc phía đông có nhiều linh thảo ngàn năm, nhưng cũng độc xà trùng điệp, thiếu hiệp nhớ cẩn trọng."
+    ],
+    "options": [
+      {
+        "label": "Xin ít thảo dược trị thương",
+        "action": "dialogue",
+        "responseLines": [
+          "Đây là một bao Kim Sáng Dược, có thể cầm máu tức thì. Hãy giữ lấy phòng thân!"
+        ]
+      },
+      {
+        "label": "Cáo từ",
+        "action": "leave"
+      }
+    ]
+  },
+  {
+    "id": "npc_vosu",
+    "name": "Nhạc Võ Sư",
+    "title": "Uy Viễn Tiêu Cục Tổng Tiêu Đầu",
+    "role": "VoSu",
+    "zoneId": "tuong_duong",
+    "isoX": 14,
+    "isoY": 25,
+    "avatarIcon": "🥋",
+    "spawnCondition": {
+      "zones": ["tuong_duong"],
+      "timeOfDay": "all",
+      "weatherAllowed": ["all"]
+    },
+    "dialogue": [
+      "Luyện võ phải kiên trì từ căn bản mã bộ, điều hòa khí tức đan điền.",
+      "Nếu muốn thử thách công lực, thiếu hiệp có thể đánh thử Mộc Nhân cọc gỗ ở sân sau võ đường!"
+    ],
+    "options": [
+      {
+        "label": "Xin được tỉ thí võ nghệ cùng Võ Sư",
+        "action": "challenge",
+        "enemyId": "npc_vosu"
+      },
+      {
+        "label": "Thỉnh giáo căn bản quyền cước",
+        "action": "dialogue",
+        "responseLines": [
+          "Mã bộ phải vững như bàn thạch, hô hấp điều hòa, khí trầm đan điền. Thiếu hiệp ngộ tính rất cao!"
+        ]
+      },
+      {
+        "label": "Cáo từ",
+        "action": "leave"
+      }
+    ]
+  },
+  {
+    "id": "npc_linhcanh",
+    "name": "Triệu Thống Lĩnh",
+    "title": "Thủ Thành Tiết Độ Sứ",
+    "role": "ThiVeThanh",
+    "zoneId": "tuong_duong",
+    "isoX": 19,
+    "isoY": 15,
+    "avatarIcon": "🛡️",
+    "spawnCondition": {
+      "zones": ["tuong_duong"],
+      "timeOfDay": "all",
+      "weatherAllowed": ["all"]
+    },
+    "dialogue": [
+      "Bước qua cổng này là bước ra khỏi Thành Tương Dương, tiến vào Rừng Trúc Hoang Dã!",
+      "Bên ngoài thành cấm vệ quân không thể bảo vệ, đao kiếm không có mắt, thiếu hiệp bảo trọng!"
+    ],
+    "options": [
+      {
+        "label": "Hỏi tình hình ngoài thành",
+        "action": "dialogue",
+        "responseLines": [
+          "Ban ngày Rừng Trúc khá yên ả, nhưng khi màn đêm buông xuống, lũ đạo tặc sẽ mò ra hoành hành!"
+        ]
+      },
+      {
+        "label": "Cáo từ",
+        "action": "leave"
+      }
+    ]
+  }
+]
